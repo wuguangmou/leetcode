@@ -95,7 +95,7 @@ public class TwoSum_001 {
     }
 
     public static void main(String[] args) {
-        int[] nums = {0,2,3,5,7,9,11,13,17,19,20};
+        int[] nums = {0,1,2,3,5,7,9,11,13,17,19,20};
         int target = 25;
 
         int[] result = solution2(nums, target);
