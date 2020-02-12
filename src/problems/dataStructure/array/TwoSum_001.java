@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * @User: 吴广谋
- * @Date: 2019/12/30
+ * @Date: 2019/1/30
  * @Description: 给定一个整数数组 nums 和一个目标值 target，在数组中找出和为目标值的那两个整数，并返回他们的数组下标。
  *  eg: nums=[2,7,11,15] target=9   return: [0,1]
  */
