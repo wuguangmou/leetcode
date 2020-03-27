@@ -7,6 +7,8 @@ package problems.algorithm.dp;
  * 设计一个算法来计算你所能获取的最大利润。(注意：你不能在买入股票前卖出股票)
  * 例：输入: [7,1,5,3,6,4]   输出：5 （第二天买入，第五天卖出，最大利润：6-1=5）
  *    输入：[7,6,4,3,1]    输出：0 （没有交易完成，所以最大利润为0）
+ *
+ * 此题与最大连续子数组和极为类似，只不过一个求差，一个求和，可以对比学习，连续最大子数组和：053；
  */
 public class BestTimeToBuyAndSellStock_121 {
     /**
@@ -56,7 +58,7 @@ public class BestTimeToBuyAndSellStock_121 {
      */
     public static int solution3(int[] prices){
         int maxPrice = 0;                               //记录最大利润，如果不存在，则输出0
-        int low = 0;                                    //记录历史最低价格
+        int low = Integer.MAX_VALUE;                    //记录历史最低价格
         for (int price : prices) {
             if (low > price) {
                 low = price;
@@ -67,6 +69,6 @@ public class BestTimeToBuyAndSellStock_121 {
     }
     public static void main(String[] args) {
         int prices[] = new int[]{2,6,1,4};
-        System.out.println(solution2(prices));
+        System.out.println(solution3(prices));
     }
 }
