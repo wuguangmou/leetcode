@@ -50,6 +50,21 @@ public class BestTimeToBuyAndSellStock_121 {
         return dp[prices.length -1];                //因为i最大循环到prices.length-1,因此返回dp[prices.length -1]
     }
 
+    /**
+     * 使用贪心算法求解问题，在求解问题的过程中，记录最大利润与历史最低价格，一旦发现有更高的最大利润，就重新赋值最大利润，
+     * 通过这样，我们总是能够获取到最大利润。
+     */
+    public static int solution3(int[] prices){
+        int maxPrice = 0;                               //记录最大利润，如果不存在，则输出0
+        int low = 0;                                    //记录历史最低价格
+        for (int price : prices) {
+            if (low > price) {
+                low = price;
+            }
+            maxPrice = Math.max(maxPrice, price - low);//在历史最大利润与现有价格-历史最低价中选出最大的
+        }
+        return maxPrice;
+    }
     public static void main(String[] args) {
         int prices[] = new int[]{2,6,1,4};
         System.out.println(solution2(prices));
