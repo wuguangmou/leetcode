@@ -7,7 +7,7 @@ package problems.algorithm.binarySearch;
  *  返回它将会被按顺序插入的位置(可以假定数组中无重复元素)。
  *  输入：[1,3,5,6], 5  输出：2；  输入：[1,3,5,6], 7  输出：4；   输入：[1,3,5,6], 0  输出：0
  */
-public class searchInsertPosition_35 {
+public class searchInsertPosition_035 {
     /**
      * 和JDK中的二分查找的方法类似，返回目标数字所在数组的下标，这里同样使用二分查找来实现，自己手写一个二分查找的方法
      * 时间复杂度：O(logn)         空间复杂度：O(1)
