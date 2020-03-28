@@ -55,6 +55,7 @@ public class BestTimeToBuyAndSellStock_121 {
     /**
      * 使用贪心算法求解问题，在求解问题的过程中，记录最大利润与历史最低价格，一旦发现有更高的最大利润，就重新赋值最大利润，
      * 通过这样，我们总是能够获取到最大利润。
+     * 时间复杂度：O(n)   空间复杂度：O(1)
      */
     public static int solution3(int[] prices){
         int maxPrice = 0;                               //记录最大利润，如果不存在，则输出0
