@@ -1,2 +1,7 @@
-# leetcode
-The java solution for leetcode problems
+# leetcode刷题记录
+此项目包含两个部分:
+base目录下为平时学习过程中的一些基础数据结构实现或基础算法实现。
+problem目录下为leetcode对应的题目的java解决方案。
+
+如果对项目中的代码或解决思路有疑问，或者有更好的思路，还请不吝赐教。
+联系方式：QQ-2295804511      Email-2295804511@qq.com
