@@ -104,15 +104,11 @@ public class DesignLinkedList_707 {
             StringBuilder sb = new StringBuilder();
             sb.append("[");
             Node current = head.next;
-            for (int i = 0; i < length; i++ ){
-                if (current.next != null){
-                    sb.append(current.val).append(" -> ");
-                    current = current.next;
-                } else {
-                    sb.append(current.val);
-                }
+            while (current.next != null){
+                sb.append(current.val).append(" -> ");
+                current = current.next;
             }
-            sb.append("]");
+            sb.append(current.val).append("]");
             return sb.toString();
         }
     }
