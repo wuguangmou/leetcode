@@ -13,7 +13,7 @@ import java.util.Map;
 public class TwoSum_001 {
 
     /**
-     * 暴力求解法，在数组中寻找target-nums[i]是否存在
+     * 暴力求解法，在数组中寻找target-nums[i]是否存在。<br/>
      * 时间复杂度：O(n^2),空间复杂度：O(n)
      */
     public static int[] solution1(int[] nums, int target){
@@ -28,10 +28,10 @@ public class TwoSum_001 {
     }
 
     /**
-     * 将在数组中寻找target-nums[i]的方式改为二分查找
+     * 将在数组中寻找target-nums[i]的方式改为二分查找。<br/>
      * 时间复杂度：O(nlogn),空间复杂度：O(n)
      */
-    private static int[] solution2(int[] nums, int target){
+    public static int[] solution2(int[] nums, int target){
         for (int i = 0; i < nums.length; i++) {
             int j = binarySearch(nums,target-nums[i]);
             if (j >= 0){
@@ -40,7 +40,6 @@ public class TwoSum_001 {
         }
         return new int[]{-1,-1};
     }
-
     private static int binarySearch(int[] nums, int target){
         Arrays.sort(nums);                      //为保证查找的数组有序，在二分查找前需进行一次排序操作
         int start = 0, end = nums.length - 1;   //在区间[start,end]中查找元素
@@ -57,8 +56,8 @@ public class TwoSum_001 {
     }
 
     /**
-     * 考虑到这个问题既需要操作数组中的元素，又需要数组中相对应的下标，因此使用map来构建映射关系
-     * 由于hashMap查找元素的时间复杂度为O(1)，因此时间复杂度为:O(n)，空间复杂度为O(n)
+     * 考虑到这个问题既需要操作数组中的元素，又需要数组中相对应的下标，因此使用map来构建映射关系。<br/>
+     * 时间复杂度为:O(n)      空间复杂度为O(n)
      */
     public static int[] solution3(int[] nums, int target){
         Map<Integer,Integer> hashMap = new HashMap<>();
@@ -78,7 +77,6 @@ public class TwoSum_001 {
 
     /**
      * 官方给出的更优解：由于将有n个元素的数组遍历了两次，我们完全可以在遍历一次的情况下完成相同的操作
-     *
      */
     public static int[] solution4(int[] nums, int target){
         Map<Integer,Integer> hashMap = new HashMap<>();
