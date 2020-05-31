@@ -9,7 +9,7 @@ package problems.algorithm.binarySearch;
  */
 public class searchInsertPosition_035 {
     /**
-     * 和JDK中的二分查找的方法类似，返回目标数字所在数组的下标，这里同样使用二分查找来实现，自己手写一个二分查找的方法
+     * 和JDK中的二分查找的方法类似，返回目标数字所在数组的下标，这里同样使用二分查找来实现，自己手写一个二分查找的方法。<br/>
      * 时间复杂度：O(logn)         空间复杂度：O(1)
      */
     public static int solution1(int[] nums, int target){
@@ -27,7 +27,7 @@ public class searchInsertPosition_035 {
     }
 
     /**
-     * 除了二分查找，当然也可以使用遍历数组的方法求解，不过不太推荐
+     * 除了二分查找，当然也可以使用遍历数组的方法求解，不过不太推荐。<br/>
      * 时间复杂度：O(n)         空间复杂度：O(1)
      */
     public static int solution2(int[] nums, int target){
