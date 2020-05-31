@@ -9,8 +9,8 @@ package problems.algorithm.dp;
 public class ClimbingStairs_070 {
 
     /**
-     * 作为DP经典入门题目，首先当然可以使用暴力破解的方法
-     * 由于每次可以攀爬的阶数为1或2，所以可以得出climbStairs[n] = climbStairs[n-1] + climbStairs[n-2]
+     * 作为DP经典入门题目，首先当然可以使用暴力破解的方法<br/>
+     * 由于每次可以攀爬的阶数为1或2，所以可以得出climbStairs[n] = climbStairs[n-1] + climbStairs[n-2]<br/>
      * 时间复杂度：O(2^n),   空间复杂度：O(n),递归树的深度可以达到n
      */
     public static int solution1(int n){
@@ -25,7 +25,7 @@ public class ClimbingStairs_070 {
 
     /**
      * 使用递归的方法求解后，如果画出递归树，可以看出递归树中存在着大量的重复计算，如果能用一个数组将每次计算的值存储下来，
-     * 这样就可以省去很多重复的计算，这种自顶向下，记录每次状态变化的方式也称为记忆化搜索
+     * 这样就可以省去很多重复的计算，这种自顶向下，记录每次状态变化的方式也称为记忆化搜索。<br/>
      * 时间复杂度：O(n)  空间复杂度：O(n)
      */
     public static int solution2(int n){
@@ -49,7 +49,8 @@ public class ClimbingStairs_070 {
     }
 
     /**
-     * 由前面可以看出，此题的状态转移方程为：DP[n] = DP[n -1] + DP[n -2]，根据状态转移方程自底向上的求解问题，即使用动态规划求解
+     * 由前面可以看出，此题的状态转移方程为：DP[n] = DP[n -1] + DP[n -2]，根据状态转移方程自底向上的求解问题，即使用动态规
+     * 划求解<br/>
      * 时间复杂度：O:(n)   空间复杂度:O:(n)
      */
     public static int solution3(int n){
