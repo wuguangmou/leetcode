@@ -9,8 +9,8 @@ package problems.math;
 public class ExcelColumnTitle_168 {
 
     /**
-     * 最开始的想法就是构建一个字母表，然后根据数字和字母的对应关系，将相应的字母组合起来，然后输出
-     * 由于1对应的是'A'，26对应的是'Z'，因此当取模的值为0时，要将其换成26，并且n的值减1
+     * 最开始的想法就是构建一个字母表，然后根据数字和字母的对应关系，将相应的字母组合起来，然后输出。<br/>
+     * 由于1对应的是'A'，26对应的是'Z'，因此当取模的值为0时，要将其换成26，并且n的值减1。
      */
     public static String solution1(int n){
         String[] alphabet = new String[]{"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
