@@ -42,7 +42,7 @@ public class LinkedListCycle_141 {
 
     /**
      * 对于这样一个单链表，由于没有给出链表具体长度，因此，无法通过创建数组的方式去记录当前节点是否已经走过，换一
-     * 种方式思考，我们可以使用hashMap去记录当前节点是否已经走过。
+     * 种方式思考，我们可以使用hashMap去记录当前节点是否已经走过。<br/>
      * 时间复杂度：介于O(n)-O(n^2)，取决于map.containsValue()方法     空间复杂度：O(n)
      */
     public static boolean solution1(ListNode head){
@@ -62,7 +62,7 @@ public class LinkedListCycle_141 {
 
     /**
      * 从方案1可以看出，想要判断链表中是否有环，肯定是需要遍历链表的，我们可以声明两个快慢指针，去遍历链表，
-     * 快指针每次前进两步，慢指针每次前进一步，如果快指针能够追到慢指针，说明链表有环。
+     * 快指针每次前进两步，慢指针每次前进一步，如果快指针能够追到慢指针，说明链表有环。<br/>
      * 时间复杂度：O(n)   空间复杂度：O(1)
      */
     public static boolean solution2(ListNode head){
