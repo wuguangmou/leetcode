@@ -12,7 +12,7 @@ package problems.algorithm.dp;
  */
 public class BestTimeToBuyAndSellStock_121 {
     /**
-     * 一般这类算法都可以使用暴力求解，首先使用暴力求解，循环遍历两次，记录最大利润差
+     * 一般这类算法都可以使用暴力求解，首先使用暴力求解，循环遍历两次，记录最大利润差<br/>
      * 时间复杂度：O(n^2)   空间复杂度：O(1)
      */
     public static int solution1(int[] prices){
@@ -31,9 +31,9 @@ public class BestTimeToBuyAndSellStock_121 {
     }
 
     /**
-     * 用DP的思想求解,第i天的最大利润 = max{(第i-1天的最大利润)，(第i天的价格-前i-1天中的历史最低价格)}
-     * 根据这个公式，可以列出状态转移方程：DP[i] = max(DP[i-1], price[i]-minPrice)，DP[i]表示第i天的最大利润。
-     * 思路可能会比较复杂，但DP解决问题的思想就是这样，可以多体会几次。
+     * 用DP的思想求解,第i天的最大利润 = max{(第i-1天的最大利润)，(第i天的价格-前i-1天中的历史最低价格)}<br/>
+     * 根据这个公式，可以列出状态转移方程：DP[i] = max(DP[i-1], price[i]-minPrice)，DP[i]表示第i天的最大利润。<br/>
+     * 思路可能会比较复杂，但DP解决问题的思想就是这样，可以多体会几次。<br/>
      * 时间复杂度：O(n)  空间复杂度：O(n)。
      */
     public static int solution2(int[] prices){
@@ -54,7 +54,7 @@ public class BestTimeToBuyAndSellStock_121 {
 
     /**
      * 使用贪心算法求解问题，在求解问题的过程中，记录最大利润与历史最低价格，一旦发现有更高的最大利润，就重新赋值最大利润，
-     * 通过这样，我们总是能够获取到最大利润。
+     * 通过这样，我们总是能够获取到最大利润。<br/>
      * 时间复杂度：O(n)   空间复杂度：O(1)
      */
     public static int solution3(int[] prices){
