@@ -20,9 +20,9 @@ import java.util.Stack;
 public class MinStack_155 {
 
     class MinStack{
-            private Stack<Integer> stack;       //使用栈 + min变量来实现最小栈
+        private Stack<Integer> stack;       //使用栈 + min变量来实现最小栈
         private int min;
-        public MinStack() {
+        MinStack() {
             stack = new Stack<>();
             min = Integer.MAX_VALUE;
         }
