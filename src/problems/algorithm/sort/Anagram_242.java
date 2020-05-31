@@ -15,8 +15,8 @@ import java.util.TreeMap;
 public class Anagram_242 {
 
     /**
-     * 最先想到的方法，现将string转换成char类型数组，进行排序后在对比两个数组是否一致
-     * 主要的时间消耗在排序以及比较两个数组是否相等上面，排序用的双基准快排，时间复杂度为O(nlogn)，而比较数组是否相等时间复杂度为O(n)
+     * 最先想到的方法，现将string转换成char类型数组，进行排序后在对比两个数组是否一致。<br/>
+     * 主要的时间消耗在排序以及比较两个数组是否相等上面，排序用的双基准快排，时间复杂度为O(nlogn)，而比较数组是否相等时间复杂度为O(n)。<br/>
      * 时间复杂度：O(nlogn),空间复杂度：O(n)
      */
     public static boolean solution1(String s, String t){
@@ -34,7 +34,7 @@ public class Anagram_242 {
 
     /**
      * 为了比较两个字符是否是字母异位词，我们还可以统计每个字母出现的频率，如果频率一样，那么这两个字符就是字母异位词
-     * 在代码执行结果时，此方法平均消耗50ms左右，是第一个方法的7—8倍，可能调用了太多次集合类的方法，不推荐的解决方案
+     * 在代码执行结果时，此方法平均消耗50ms左右，是第一个方法的7—8倍，可能调用了太多次集合类的方法，不推荐的解决方案。
      */
     public static boolean solution2(String s, String t){
         if (s == null || t == null || s.length() != t.length()){
@@ -71,8 +71,8 @@ public class Anagram_242 {
     }
 
     /**
-     * 使用map统计频率时，操作有些繁琐，完全可以使用数组来简化操作
-     *  时间复杂度：O(n)，空间复杂度：O(1)，因为开辟的是固定长度的数组
+     * 使用map统计频率时，操作有些繁琐，完全可以使用数组来简化操作。<br/>
+     * 时间复杂度：O(n)，空间复杂度：O(1)，因为开辟的是固定长度的数组
      */
     public static boolean solution3(String s, String t){
         if (s == null || t == null || s.length() != t.length()){
@@ -95,7 +95,7 @@ public class Anagram_242 {
     }
 
     /**
-     * 官方给出更快一些的解决方案：在方法3中，我们完全将两个字符遍历完之后再去对比，其实可以在遍历的时候就去对比，不一致立刻退出
+     * 官方给出更快一些的解决方案：在方法3中，我们完全将两个字符遍历完之后再去对比，其实可以在遍历的时候就去对比，不一致立刻退出。<br/>
      * 时间复杂度：O(n)，空间复杂度：O(1)
      */
     public static boolean solution4(String s, String t){
