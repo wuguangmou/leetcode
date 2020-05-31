@@ -14,10 +14,10 @@ import java.util.Arrays;
 public class HouseRobber_198 {
 
     /**
-     * 首先，分析问题，使用自顶向下的分析方法：
+     * 首先，分析问题，使用自顶向下的分析方法：<br/>
      * 对于到第n个房子的最高金额，方案无非有两种，偷或者不偷，我们使用opt(i)表示偷取第i个房子的最优解，即最高金额。
-     * 当偷取时，它的最高金额为opt(i)=opt(i-2)+arr[i],不偷取时，它的最高金额为opt(i)=opt(i-1),此时只需要比较它们谁更大即可。
-     * 递归方程：opt(i)=max{opt(i-2)+arr[i], opt(i-1)} 递归出口为：opt(0)=arr[0],opt(1)=max{arr[0], arr[1]}
+     * 当偷取时，它的最高金额为opt(i)=opt(i-2)+arr[i],不偷取时，它的最高金额为opt(i)=opt(i-1),此时只需要比较它们谁更大即可。<br/>
+     * 递归方程：opt(i)=max{opt(i-2)+arr[i], opt(i-1)} 递归出口为：opt(0)=arr[0],opt(1)=max{arr[0], arr[1]}<br/>
      * 时间复杂度：O(2^n)   空间复杂度为递归树的高度：O(n)
      */
     public static int solution1(int[] nums){
@@ -39,8 +39,8 @@ public class HouseRobber_198 {
     }
 
     /**
-     * 在使用递归的方式求解时，如果画出递归树，可以发现计算了大量重复的子问题，因此我们可以使用动态规划来求解问题。
-     * 状态转移方程：dp[i]=max{dp[i-2]+arr[i], dp[i-1]}
+     * 在使用递归的方式求解时，如果画出递归树，可以发现计算了大量重复的子问题，因此我们可以使用动态规划来求解问题。<br/>
+     * 状态转移方程：dp[i]=max{dp[i-2]+arr[i], dp[i-1]}<br/>
      * 时间复杂度:O(n)   空间复杂度：O(n)
      */
     public static int solution2(int[] nums){
@@ -59,8 +59,8 @@ public class HouseRobber_198 {
     }
 
     /**
-     * 当然，我们也可以使用记忆化搜索的方式，自顶向下的去调用，只不过会略微显得有点繁琐
-     * 状态转移方程：dp[i]=max{dp[i-2]+arr[i], dp[i-1]}
+     * 当然，我们也可以使用记忆化搜索的方式，自顶向下的去调用，只不过会略微显得有点繁琐<br/>
+     * 状态转移方程：dp[i]=max{dp[i-2]+arr[i], dp[i-1]}<br/>
      * 时间复杂度:O(n)   空间复杂度：O(n)
      */
     public static int solution3(int[] nums){
