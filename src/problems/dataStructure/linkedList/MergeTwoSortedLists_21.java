@@ -41,7 +41,7 @@ public class MergeTwoSortedLists_21 {
     }
 
     /**
-     * 很容易想到，遍历l1和l2，然后比较每个节点的值，每次都将小的值赋给合并后的链表，通过这样，合并两个链表
+     * 很容易想到，遍历l1和l2，然后比较每个节点的值，每次都将小的值赋给合并后的链表，通过这样，合并两个链表。<br/>
      * 时间复杂度：O(m+n)  空间复杂度：O(1)    解释：m和n分别为链表l1、l2的长度
      */
     public static ListNode solution1(ListNode l1, ListNode l2){
@@ -63,8 +63,8 @@ public class MergeTwoSortedLists_21 {
     }
 
     /**
-     * 方法1通过迭代的方式遍历l1和l2，那么肯定也可以通过递归的方式去遍历l1和l2
-     * 时间复杂度：O(m+n)     空间复杂度：O(m+n)    解释：m和n分别为链表l1、l2的长度
+     * 方法1通过迭代的方式遍历l1和l2，那么肯定也可以通过递归的方式去遍历l1和l2。<br/>
+     * 时间复杂度：O(m+n)     空间复杂度：O(m+n)，解释：m和n分别为链表l1、l2的长度
      */
     public static ListNode solution2(ListNode l1, ListNode l2){
         if (l1 == null){
