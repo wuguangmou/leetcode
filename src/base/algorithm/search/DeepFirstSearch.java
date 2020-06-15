@@ -7,6 +7,15 @@ import java.util.*;
  * @Date: 2020/4/28
  * @Description: DFS代码演示，学习来源：bilibili Up主正月点灯笼
  * 视频地址：https://www.bilibili.com/video/BV1Ks411575U/?spm_id_from=333.788.videocard.0
+ * DFS节点图(具体如目录下的dijkstra.jpg所示)：
+ * {
+ *     "A": {"B", "C"},            //A节点的邻接节点有B、C
+ *     "B": {"A", "C", "D"},       //B节点的邻接节点有A、C、D
+ *     "C": {"A", "B", "D", "E"},  //C节点的邻接节点有A、B、D、E
+ *     "D": {"B", "C", "E", "F"},  //D节点的邻接节点有B、C、E、F
+ *     "E": {"C", "D"},            //E节点的邻接节点有C、D
+ *     "F": {"D"}                  //F节点的邻接节点有D
+ * }
  */
 public class DeepFirstSearch {
 
