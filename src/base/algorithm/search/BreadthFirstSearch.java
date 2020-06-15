@@ -20,13 +20,13 @@ import java.util.*;
 public class BreadthFirstSearch {
 
     public static void BFS(Map<String, String[]> graph, String s){
-        LinkedList<String> queue = new LinkedList<>();       //定义一个队列，用来存储BFS的遍历节点
+        Queue<String> queue = new LinkedList<>();       //定义一个队列，用来存储BFS的遍历节点
         queue.add(s);
 
         List<String> seen = new LinkedList<>();             //定义一个集合，用于保存遍历过程中出现的节点
         seen.add(s);
         while (queue.size() > 0){
-            String v = queue.pop();
+            String v = queue.poll();
             String[] nodes = graph.get(v);                  //获取当前节点的所有邻接点
             for (String node : nodes) {
                 if (!seen.contains(node)){                  //如果当前节点V的邻接点没有见过
