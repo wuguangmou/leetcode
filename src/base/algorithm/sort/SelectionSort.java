@@ -12,7 +12,10 @@ import java.util.Arrays;
 public class SelectionSort {
 
     /**
-     * 选择排序java实现，思想：每次总是选一个最小的元素，进行交换
+     * 选择排序java实现，思想：每次总是选一个最小的元素，进行交换。
+     * 由于选择排序会交换元素位置，可能会导致相同元素的前后顺序发生变化（例：5 8 5 2 9），因此，选择排序是不稳定的
+     * 时间复杂度：O(n^2)     空间复杂度：O(1)
+     * @param: arr 待排序数组
      */
     public static void selectionSort(int[] arr){
         //i表示总共要进行N-1轮比较
