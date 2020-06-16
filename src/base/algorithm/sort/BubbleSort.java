@@ -13,7 +13,7 @@ public class BubbleSort {
     /**
      * 冒泡排序java实现，思想：将值较大的元素向后调整
      * 时间复杂度（平均）：O(n^2)       空间复杂度：O(1)
-     * @param: arr 待排序数组
+     * @param arr 待排序数组
      */
     public static void bubbleSort(int[] arr){
         int temp = 0;
@@ -34,7 +34,7 @@ public class BubbleSort {
      * 在冒泡排序的过程中，数据的顺序排好之后，冒泡算法仍会进行下一轮的比较，这是没有意义的(例如i=6的时候，此时数据已经全部排序
      * 完成，后面的遍历可直接终止)
      * 时间复杂度：O(n^2)       空间复杂度：O(1)
-     * @param: arr 待排序数组
+     * @param arr 待排序数组
      */
     public static void bubbleSortWithFlag(int[] arr){
         int temp;

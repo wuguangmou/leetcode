@@ -14,7 +14,7 @@ public class InsertionSort {
     /**
      * 插入排序java实现，最好情况：数组正序，此时仅需比较n-1次；最坏情况：数组逆序，此时需比较n(n-1)/2次。
      * 时间复杂度（平均）：O(n^2)       空间复杂度：O(1)
-     * @param: arr 待排序数组
+     * @param arr 待排序数组
      */
     public static void insertionSort(int[] arr){
         int temp;
