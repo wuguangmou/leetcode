@@ -16,7 +16,7 @@ public class BubbleSort {
      * @param arr 待排序数组
      */
     public static void bubbleSort(int[] arr){
-        int temp = 0;
+        int temp;
         //外层循环为排序的次数，n个元素需要进行n-1次排序
         for (int i = 0; i < arr.length - 1; i++) {
             //内层循环为每趟比较的次数，第i次循环需要比较n-i次
