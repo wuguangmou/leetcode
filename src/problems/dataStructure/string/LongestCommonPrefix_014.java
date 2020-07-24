@@ -55,6 +55,7 @@ public class LongestCommonPrefix_014 {
         }
         return prefix;
     }
+    //找到str1和Str2的最长公共子前缀
     public static String longestCommonPrefix(String str1, String str2){
         int length = Math.min(str1.length(), str2.length());
         int index = 0;
